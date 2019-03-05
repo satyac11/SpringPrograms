@@ -7,9 +7,10 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
         
-	<bean name="dpobj" class="com.spring.ByName.Department">
+	<bean name="dp" class="com.spring.ByName.Department">
 		<property name="depName" value="CMUS"/>
 		<property name="noOfEmployees" value="12"/>
 	</bean>
-	<bean name="empObj" class="com.spring.ByName.EmployeeBean" autowire="byType"/>		
+	<bean name="empObj" class="com.spring.ByName.EmployeeBean" autowire="byName"/>	
+	<!-- <bean name="empObj" class="com.spring.ByName.EmployeeBean" autowire="byType"/>	 -->
 </beans>

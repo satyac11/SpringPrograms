@@ -19,7 +19,7 @@ public class TestBean implements ITest {
 		this.dt = dt;
 	}
 	@Autowired
-	public TestBean(Date dt) {
+	public TestBean(Date dt) {//Counstructor auto wiring
 		this.dt = dt;
 	}
 
